@@ -1,0 +1,5 @@
+﻿  exercicios-aula-2.cpp
+C:\Users\patrick.carvalho\source\repos\exercicios-aula-2\exercicios-aula-2\exercicios-aula-2.cpp(51,26): warning C4244: '=': conversão de 'int' para 'float', possível perda de dados
+C:\Users\patrick.carvalho\source\repos\exercicios-aula-2\exercicios-aula-2\exercicios-aula-2.cpp(77,18): warning C4244: '=': conversão de 'int' para 'float', possível perda de dados
+C:\Users\patrick.carvalho\source\repos\exercicios-aula-2\exercicios-aula-2\exercicios-aula-2.cpp(290,9): warning C4101: 'idade': variável local não referenciada
+  exercicios-aula-2.vcxproj -> C:\Users\patrick.carvalho\source\repos\exercicios-aula-2\Debug\exercicios-aula-2.exe
