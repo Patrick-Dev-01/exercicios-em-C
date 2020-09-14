@@ -1,5 +1,10 @@
 ﻿  exercicios-aula-2.cpp
 C:\Users\patrick.carvalho\source\repos\exercicios-aula-2\exercicios-aula-2\exercicios-aula-2.cpp(51,26): warning C4244: '=': conversão de 'int' para 'float', possível perda de dados
 C:\Users\patrick.carvalho\source\repos\exercicios-aula-2\exercicios-aula-2\exercicios-aula-2.cpp(77,18): warning C4244: '=': conversão de 'int' para 'float', possível perda de dados
-C:\Users\patrick.carvalho\source\repos\exercicios-aula-2\exercicios-aula-2\exercicios-aula-2.cpp(290,9): warning C4101: 'idade': variável local não referenciada
+C:\Users\patrick.carvalho\source\repos\exercicios-aula-2\exercicios-aula-2\exercicios-aula-2.cpp(273,25): warning C4244: '=': conversão de 'int' para 'float', possível perda de dados
+C:\Users\patrick.carvalho\source\repos\exercicios-aula-2\exercicios-aula-2\exercicios-aula-2.cpp(324,16): warning C4477: 'printf': a cadeia de formato '% p' requer um argumento do tipo 'void *', mas um argumento variadic 2 tem o tipo 'double'
+C:\Users\patrick.carvalho\source\repos\exercicios-aula-2\exercicios-aula-2\exercicios-aula-2.cpp(324,16): warning C4473: 'printf' : não há argumentos suficientes transmitidos para a cadeia de caracteres de formato
+C:\Users\patrick.carvalho\source\repos\exercicios-aula-2\exercicios-aula-2\exercicios-aula-2.cpp(324,16): message : espaços reservados e seus parâmetros esperam 3 argumentos variadic, mas 2 foram fornecidos
+C:\Users\patrick.carvalho\source\repos\exercicios-aula-2\exercicios-aula-2\exercicios-aula-2.cpp(324,16): message : o argumento variadic 3 ausente é requerido pela cadeia de formato '%2.f'
+C:\Users\patrick.carvalho\source\repos\exercicios-aula-2\exercicios-aula-2\exercicios-aula-2.cpp(365,37): warning C4101: 'i': variável local não referenciada
   exercicios-aula-2.vcxproj -> C:\Users\patrick.carvalho\source\repos\exercicios-aula-2\Debug\exercicios-aula-2.exe

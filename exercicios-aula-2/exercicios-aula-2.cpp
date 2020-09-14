@@ -288,7 +288,7 @@ void ex11() {
 
 void ex12() {
     int idade, escolha;
-    float valor, valorFinal, desconto;
+    float valor = 0, valorFinal = 0, desconto = 0;
     char produto[20] = "";
 
     printf("Bem-vindo a lojas nenhuma, escolha um de nossos produtos de acordo com o seu numero correspondente");
@@ -321,19 +321,63 @@ void ex12() {
         desconto = valor * 15 / 100;
         valorFinal = valor - desconto;
 
-        printf("Voce escolheu o %c e obteve um desconto de 15% por ser acima de 65 anos\nTotal a Pagar: R$%d", produto, valor);
+        printf("Voce escolheu um %s e obteve um desconto de 15% por ter idade acima de 65 anos\nTotal a Pagar: R$%2.f", produto, valorFinal);
     }
 
-    printf("Voce escolheu o %c\nTotal a pagar: R$%d", produto, valor);
+    printf("Voce escolheu o %s\nTotal a pagar: R$%2.f", produto, valor);
 
     
+}
+
+// RESOLVIDO 
+
+void ex13() {
+    int final_placa;
+    char dia[15] = "";
+
+    printf("\nDigite o numero final da placa do seu carro e iremos verificar qual dia da semana e o rodizio: ");
+    scanf_s("%d", &final_placa);
+
+    if (final_placa == 1 || final_placa == 2) {
+        strcpy_s(dia, "Segunda-Feira");
+    }
+
+    if (final_placa == 3 || final_placa == 4) {
+        strcpy_s(dia, "Terca-Feira");
+    }
+
+    if (final_placa == 5 || final_placa == 6) {
+        strcpy_s(dia, "Quarta-Feira");
+    }
+
+    if (final_placa == 7 || final_placa == 8) {
+        strcpy_s(dia, "Quinta-Feira");
+    }
+
+    if (final_placa == 9 || final_placa == 0) {
+        strcpy_s(dia, "Sexta-Feira");
+    }
+
+    printf("\nSeu Rodizio e na %s", dia);
+}
+
+void ex14() {
+    int arrayNumerico[41], i, c;
+
+    for (i = 1; i <= 40; i++) {
+        arrayNumerico[i] = i;
+    }
+
+    for (i = 1; i <= sizeof(arrayNumerico); i++) {
+       arrayNumerico[i]
+    }
 }
 
 int main()
 {
     setlocale(LC_ALL, "Portuguese");
 
-    ex12();
+    ex14();
 
     return 0;
 }
