@@ -53,6 +53,8 @@ void ex2() {
     printf("\nArea: %2.f\n", area);
 }
 
+// RESOLVIDO
+
 void ex3() {
     int numeros[11];
     int i;
@@ -67,7 +69,7 @@ void ex3() {
         scanf_s("%d", &numeros[i]);
     }
 
-    for (i = 1; i <= sizeof(numeros); i++) {
+    for (i = 1; i <= 10; i++) {
         if (numeros[i] > 4) {
             soma = soma + numeros[i];
             m++;
@@ -75,8 +77,8 @@ void ex3() {
     }
 
     media = soma / m;
-    // printf("%f", media);
-    printf("\nSoma: %d\n", soma);
+    printf("\nSoma dos valores maiores que 4: %d\n", soma);
+    printf("Media: %2.f", media);
     printf("\nfim do programa\n");
 }
 
@@ -261,6 +263,8 @@ void ex10() {
     printf("\nSua media semestral: %2.f\n", media);
 }
 
+// RESOLVIDO
+
 void ex11() {
     int num, divisivel = 1, divisor;
     float resultado = 0;
@@ -291,16 +295,18 @@ void ex12() {
     float valor = 0, valorFinal = 0, desconto = 0;
     char produto[20] = "";
 
-    printf("Bem-vindo a lojas nenhuma, escolha um de nossos produtos de acordo com o seu numero correspondente");
-    printf("---------------------------------------------------------------------------------------------------");
-    printf("1 - PC Gamer: R$ 3000");
-    printf("2 - PS4: R$ 4000");
-    printf("3 - IPHONE: R$ 1500");
+    printf("Bem-vindo a lojas nenhuma, escolha um de nossos produtos de acordo com o seu numero correspondente\n");
+    printf("--------------------------------------------------------------------------------------\n");
+    printf("1 - PC Gamer: R$ 3000\n");
+    printf("2 - PS4: R$ 4000\n");
+    printf("3 - IPHONE: R$ 1500\n");
+    printf("--------------------------------------------------------------------------------------\n");
+    printf("Numero do Produto: ");
     scanf_s("%d", &escolha);
-    printf("---------------------------------------------------------------------------------------------------");
 
     printf("Digite sua idade: ");
     scanf_s("%d", &idade);
+    printf("--------------------------------------------------------------------------------------\n");
 
     if (escolha == 1) {
         strcpy_s(produto, "PC Gamer");
@@ -321,12 +327,12 @@ void ex12() {
         desconto = valor * 15 / 100;
         valorFinal = valor - desconto;
 
-        printf("Voce escolheu um %s e obteve um desconto de 15% por ter idade acima de 65 anos\nTotal a Pagar: R$%2.f", produto, valorFinal);
+        printf("Voce escolheu um %s e obteve um desconto de 15 porcento por ter idade acima de 65 anos\nTotal a Pagar: R$%2.f\n", produto, valorFinal);
     }
 
-    printf("Voce escolheu o %s\nTotal a pagar: R$%2.f", produto, valor);
-
-    
+    else{
+        printf("Voce escolheu o %s\nTotal a pagar: R$%2.f\n", produto, valor);
+    }    
 }
 
 // RESOLVIDO 
@@ -361,15 +367,20 @@ void ex13() {
     printf("\nSeu Rodizio e na %s", dia);
 }
 
+// RESOLVIDO
+
 void ex14() {
-    int arrayNumerico[41], i, c;
+    int arrayNumerico[41], i;
 
     for (i = 1; i <= 40; i++) {
         arrayNumerico[i] = i;
     }
 
-    for (i = 1; i <= sizeof(arrayNumerico); i++) {
-       arrayNumerico[i]
+    for (i = 1; i <= 40; i++) {
+        printf("%d ", arrayNumerico[i]);
+        if (arrayNumerico[i] % 3 == 0) {
+            printf("pi ");
+        }
     }
 }
 
@@ -377,7 +388,7 @@ int main()
 {
     setlocale(LC_ALL, "Portuguese");
 
-    ex14();
+    ex12();
 
     return 0;
 }
